@@ -364,11 +364,133 @@ Terraform will perform the following actions:
 
 Plan: 6 to add, 0 to change, 0 to destroy.
 ```
+## Задание 4
+
+Объявите в файле outputs.tf output типа map, содержащий { instance_name = external_ip } для каждой из ВМ.
+Примените изменения.
+
+```Bash
+root@devopsserver:/home/flid/terraform/src# terraform apply
+var.cloud_id
+  b1gk34aj8huam4c6qc65
+
+  Enter a value: 
+
+var.folder_id
+  b1groq7lioh1rbih3b87
+
+  Enter a value: 
+data.yandex_compute_image.ubuntu-vm-db: Reading...
+data.yandex_compute_image.ubuntu: Reading...
+data.yandex_compute_image.ubuntu-vm-db: Read complete after 0s [id=fd826honb8s0i1jtt6cg]
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd826honb8s0i1jtt6cg]
+yandex_compute_instance.platform-db: Refreshing state... [id=fhme41k6m9bel5p5pags]
+yandex_compute_instance.platform: Refreshing state... [id=fhm2n8pvvof7sb860dcf]
+
+Changes to Outputs:
+  + vm_ips = {
+      + netology-develop-platform-db  = "10.128.48.115"
+      + netology-develop-platform-web = "10.128.48.29"
+    }
+
+You can apply this plan to save these new output values to the Terraform state, without changing any real infrastructure.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
 
 
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+vm_ips = {
+  "netology-develop-platform-db" = "10.128.48.115"
+  "netology-develop-platform-web" = "10.128.48.29"
+}
 
 
+```
 
+## Задание 5
 
+В файле locals.tf опишите в одном local-блоке имя каждой ВМ, используйте интерполяцию ${..} с несколькими переменными по примеру из лекции.
+Замените переменные с именами ВМ из файла variables.tf на созданные вами local-переменные.
+Примените изменения.
+
+Описываем все в одном блоке
+<img width="1234" height="251" alt="image" src="https://github.com/user-attachments/assets/91c4f249-02cd-46d9-85cb-2a5421f9360f" />
+
+Заменяем переменные
+<img width="1253" height="602" alt="image" src="https://github.com/user-attachments/assets/e6674e1c-5a7f-4899-b729-35d91f236f03" />
+
+Изменяем main.tf
+<img width="777" height="219" alt="image" src="https://github.com/user-attachments/assets/43b2bade-a670-4b93-8947-18cc238f7872" />
+<img width="720" height="168" alt="image" src="https://github.com/user-attachments/assets/8478a619-5e46-4991-86d7-95ab03912efc" />
+
+## Заданние 6
+
+Вместо использования трёх переменных ".._cores",".._memory",".._core_fraction" в блоке resources {...}, объедините их в переменные типа map с именами "vm_web_resources" и "vm_db_resources". В качестве продвинутой практики попробуйте создать одну map-переменную vms_resources и уже внутри неё конфиги обеих ВМ — вложенный map.
+Также поступите с блоком metadata {serial-port-enable, ssh-keys}, эта переменная должна быть общая для всех ваших ВМ.
+Найдите и удалите все более не используемые переменные проекта.
+Проверьте terraform plan. Изменений быть не должно.
+
+<img width="1246" height="962" alt="image" src="https://github.com/user-attachments/assets/51861fd0-2c68-4fcb-b07c-dfcae8787e4a" />
+
+В файле main.tf вносим изменения:
+
+<img width="1110" height="479" alt="image" src="https://github.com/user-attachments/assets/e8c72dbd-3d13-4c85-af46-c1b2c86785e8" />
+
+Получаем вывод:
+
+```Bash
+root@devopsserver:/home/flid/terraform/src# terraform plan
+
+var.cloud_id
+  b1gk34aj8huam4c6qc65
+
+  Enter a value: b1gk34aj8huam4c6qc65
+
+var.folder_id
+  b1groq7lioh1rbih3b87
+
+  Enter a value: b1groq7lioh1rbih3b87
+
+data.yandex_compute_image.ubuntu: Reading...
+data.yandex_compute_image.ubuntu-vm-db: Reading...
+data.yandex_compute_image.ubuntu: Read complete after 0s [id=fd826honb8s0i1jtt6cg]
+data.yandex_compute_image.ubuntu-vm-db: Read complete after 0s [id=fd826honb8s0i1jtt6cg]
+yandex_vpc_network.develop: Refreshing state... [id=enp7e8q3s9m8abcde]
+yandex_vpc_subnet.develop: Refreshing state... [id=e2l5k9q2m8abcde]
+yandex_compute_instance.platform: Refreshing state... [id=fhm2n8pvvof7sb860dcf]
+yandex_compute_instance.platform-db: Refreshing state... [id=fhme41k6m9bel5p5pags]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found
+no differences, so no changes are needed.
+
+Changes to Outputs:
+  (none)
+
+─────────────────────────────────────────────────────────────────────────────────
+
+Plan: 0 to add, 0 to change, 0 to destroy.
+
+─────────────────────────────────────────────────────────────────────────────────
+
+Note: Objects have changed outside of Terraform
+
+Terraform detected the following changes made outside of Terraform since the last
+"terraform apply" which may have affected this plan:
+
+  ~ yandex_compute_instance.platform: metadata["user-data"] has been changed
+
+─────────────────────────────────────────────────────────────────────────────────
+
+This plan does nothing. Terraform has determined that no changes are needed.
+```
 
 
