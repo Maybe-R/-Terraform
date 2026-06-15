@@ -427,7 +427,9 @@ vm_ips = {
 <img width="1253" height="602" alt="image" src="https://github.com/user-attachments/assets/e6674e1c-5a7f-4899-b729-35d91f236f03" />
 
 Изменяем main.tf
+
 <img width="777" height="219" alt="image" src="https://github.com/user-attachments/assets/43b2bade-a670-4b93-8947-18cc238f7872" />
+
 <img width="720" height="168" alt="image" src="https://github.com/user-attachments/assets/8478a619-5e46-4991-86d7-95ab03912efc" />
 
 ## Заданние 6
