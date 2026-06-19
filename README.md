@@ -420,17 +420,9 @@ vm_ips = {
 Замените переменные с именами ВМ из файла variables.tf на созданные вами local-переменные.
 Примените изменения.
 
-Описываем все в одном блоке
-<img width="1234" height="251" alt="image" src="https://github.com/user-attachments/assets/91c4f249-02cd-46d9-85cb-2a5421f9360f" />
+Описываем все в одном блоке - https://github.com/Maybe-R/-Terraform/blob/main/locals.tf
 
-Заменяем переменные
-<img width="1253" height="602" alt="image" src="https://github.com/user-attachments/assets/e6674e1c-5a7f-4899-b729-35d91f236f03" />
-
-Изменяем main.tf
-
-<img width="777" height="219" alt="image" src="https://github.com/user-attachments/assets/43b2bade-a670-4b93-8947-18cc238f7872" />
-
-<img width="720" height="168" alt="image" src="https://github.com/user-attachments/assets/8478a619-5e46-4991-86d7-95ab03912efc" />
+Изменяем main.tf - https://github.com/Maybe-R/-Terraform/blob/main/main.tf (Например строка 43 "name = local.vm_db_instance_name" 
 
 ## Заданние 6
 
