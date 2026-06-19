@@ -431,11 +431,12 @@ vm_ips = {
 Найдите и закоментируйте все, более не используемые переменные проекта.
 Проверьте terraform plan. Изменений быть не должно.
 
-<img width="1246" height="962" alt="image" src="https://github.com/user-attachments/assets/51861fd0-2c68-4fcb-b07c-dfcae8787e4a" />
+В файле прописываем map-переменную https://github.com/Maybe-R/-Terraform/blob/main/vms_platform.tf 
 
 В файле main.tf вносим изменения:
 
-<img width="1110" height="479" alt="image" src="https://github.com/user-attachments/assets/e8c72dbd-3d13-4c85-af46-c1b2c86785e8" />
+<img width="1112" height="438" alt="image" src="https://github.com/user-attachments/assets/fc7ab8c1-999f-4c13-9456-64b8d76f0121" />
+
 
 Получаем вывод:
 
