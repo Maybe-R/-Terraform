@@ -11,4 +11,24 @@
 
 <img width="1674" height="1227" alt="image" src="https://github.com/user-attachments/assets/f14d1934-a388-47a8-9358-3f4fa52908ce" />
 
+## Задание 2
+
+Создайте файл count-vm.tf. Опишите в нём создание двух одинаковых ВМ web-1 и web-2 (не web-0 и web-1) с минимальными параметрами, используя мета-аргумент count loop. Назначьте ВМ созданную в первом задании группу безопасности.(как это сделать узнайте в документации провайдера yandex/compute_instance )
+
+Создаем файл count-vm
+
+<img width="610" height="625" alt="image" src="https://github.com/user-attachments/assets/d63ef9b6-98e5-4af4-a367-56b2a747ced6" />
+
+Добавляем новые переменные в variables.tf и personal.auto.tfvars
+
+<img width="1162" height="457" alt="image" src="https://github.com/user-attachments/assets/a9681cf0-0acf-408e-8446-0d0d8f6edaf7" />
+
+<img width="736" height="412" alt="image" src="https://github.com/user-attachments/assets/e23461e7-4944-4ac7-9311-6c2165c8eeed" />
+
+<img width="2342" height="658" alt="image" src="https://github.com/user-attachments/assets/88accb66-636c-46f2-82f1-8d44701468ea" />
+
+
+
+
+
 
