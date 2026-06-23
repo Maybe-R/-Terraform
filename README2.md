@@ -23,9 +23,12 @@
 
 <img width="1162" height="457" alt="image" src="https://github.com/user-attachments/assets/a9681cf0-0acf-408e-8446-0d0d8f6edaf7" />
 
+Запускаем создание двух одинаковых машин
+
 <img width="736" height="412" alt="image" src="https://github.com/user-attachments/assets/e23461e7-4944-4ac7-9311-6c2165c8eeed" />
 
 <img width="2342" height="658" alt="image" src="https://github.com/user-attachments/assets/88accb66-636c-46f2-82f1-8d44701468ea" />
+
 
 
 
