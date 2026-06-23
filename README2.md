@@ -29,6 +29,15 @@
 
 <img width="2342" height="658" alt="image" src="https://github.com/user-attachments/assets/88accb66-636c-46f2-82f1-8d44701468ea" />
 
+Создайте файл for_each-vm.tf. Опишите в нём создание двух ВМ для баз данных с именами "main" и "replica" разных по cpu/ram/disk_volume , используя мета-аргумент for_each loop. Используйте для обеих ВМ одну общую переменную
+
+<img width="1096" height="990" alt="image" src="https://github.com/user-attachments/assets/f3867223-3e45-4b3b-b70f-84b22741c507" />
+
+<img width="2242" height="284" alt="image" src="https://github.com/user-attachments/assets/e61972b5-c9a8-403e-8221-c4ef713ea552" />
+
+
+## Задание 3
+
 
 
 
