@@ -35,6 +35,11 @@
 
 <img width="2242" height="284" alt="image" src="https://github.com/user-attachments/assets/e61972b5-c9a8-403e-8221-c4ef713ea552" />
 
+Параметр " depends_on = [yandex_compute_instance.web] " в for_each-vm.tf позволяет придержать создание машин из count-vm.tf, пока не создадуться его машины.
+
+Используйте функцию file в local-переменной для считывания ключа ~/.ssh/id_rsa.pub и его последующего использования в блоке metadata,
+<img width="1311" height="504" alt="image" src="https://github.com/user-attachments/assets/719f8d26-cb76-4ab9-811b-141d7d0e40ae" />
+
 
 ## Задание 3
 
