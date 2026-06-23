@@ -43,6 +43,12 @@
 
 ## Задание 3
 
+Создайте 3 одинаковых виртуальных диска размером 1 Гб с помощью ресурса yandex_compute_disk и мета-аргумента count в файле disk_vm.tf .
+Создайте в том же файле одиночную(использовать count или for_each запрещено из-за задания №4) ВМ c именем "storage" . Используйте блок dynamic secondary_disk{..} и мета-аргумент for_each для подключения созданных вами дополнительных дисков.
+
+<img width="1330" height="961" alt="image" src="https://github.com/user-attachments/assets/765147f7-93f6-4a97-ab1d-e1c07b203d41" />
+
+<img width="1706" height="1196" alt="image" src="https://github.com/user-attachments/assets/c0e80fff-d773-4a4c-ae8d-a00d2137bc37" />
 
 
 
