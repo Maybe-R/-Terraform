@@ -50,6 +50,12 @@
 
 <img width="1706" height="1196" alt="image" src="https://github.com/user-attachments/assets/c0e80fff-d773-4a4c-ae8d-a00d2137bc37" />
 
+<img width="765" height="814" alt="image" src="https://github.com/user-attachments/assets/7115d49b-8eab-4b0b-93a0-16ce1a52097e" />
+
+## Задание 4
+
+
+
 
 
 
