@@ -11,7 +11,7 @@ resource "yandex_vpc_subnet" "develop" {
 data "yandex_compute_image" "ubuntu" {
   family = var.vm_web_family
 }
-resource "yandex_compute_instance" "platform1" {
+resource "yandex_compute_instance" "web" {
   name =  local.vm_web_instance_name
   platform_id = var.vm_web_platform_id
   metadata = var.common_metadata
@@ -39,7 +39,7 @@ resource "yandex_compute_instance" "platform1" {
 data "yandex_compute_image" "ubuntu2" {
   family = var.vm_db_family
 }
-resource "yandex_compute_instance" "platform2" {
+resource "yandex_compute_instance" "db" {
   name        = local.vm_db_instance_name
   platform_id = var.vm_db_platform_id
   metadata    = var.common_metadata
