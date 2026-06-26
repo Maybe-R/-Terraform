@@ -1,6 +1,12 @@
 output "vm_ips" {
   value = {
-    "netology-develop-platform-db" = "10.128.48.115"
-    "netology-develop-platform-web" = "10.128.48.29"
+    db = {
+      private = yandex_compute_instance.db.network_interface.0.ip_address
+      public  = yandex_compute_instance.db.network_interface.0.nat_ip_address
+    }
+    web = {
+      private = yandex_compute_instance.web.network_interface.0.ip_address
+      public  = yandex_compute_instance.web.network_interface.0.nat_ip_address
+    }
   }
 }
