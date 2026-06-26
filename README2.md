@@ -56,6 +56,13 @@
 
 ## Задание 4
 
+Возникли проблемы по подключению провайдеров, как только пришлось добавить локально второго провайдера local.
+<img width="1136" height="196" alt="image" src="https://github.com/user-attachments/assets/d5ce13f5-6c6e-4faf-9427-c3f3d4a6da36" />
+
+Не понимаю, что не так.
+Провайдер local лежит по пути - /home/flid/ter-homeworks/02/src/.terraform.d/plugins/registry.terraform.io/hashicorp/local/2.6.0/linux_amd64/terraform-provider-local
+Прописала явный путь
+
 
 
 
