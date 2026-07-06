@@ -63,6 +63,10 @@
 Провайдер local лежит по пути - /home/flid/ter-homeworks/02/src/.terraform.d/plugins/registry.terraform.io/hashicorp/local/2.6.0/linux_amd64/terraform-provider-local
 Прописала явный путь
 
+Помомгло указание пути к плагинам при инициализации - terraform init -plugin-dir='.terraform.d/plugins'
+<img width="817" height="675" alt="image" src="https://github.com/user-attachments/assets/414c3892-be4c-4c98-95e5-1a22998c5d40" />
+
+
 
 
 
