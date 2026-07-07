@@ -20,6 +20,3 @@ provider "yandex" {
   service_account_key_file = file("authorized_key.json")
 }
 
-provider "local" {
-  
-}
