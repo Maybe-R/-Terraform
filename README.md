@@ -66,6 +66,26 @@
 Помомгло указание пути к плагинам при инициализации - terraform init -plugin-dir='.terraform.d/plugins'
 <img width="817" height="675" alt="image" src="https://github.com/user-attachments/assets/414c3892-be4c-4c98-95e5-1a22998c5d40" />
 
+Прописываем файл ansible.tf на примере лекций:
+
+<img width="797" height="331" alt="image" src="https://github.com/user-attachments/assets/bc9a5ebc-9996-4e56-99fe-2b16e14ceece" />
+
+Прописываем ansible_inventory.tftpl для определения формата вывода информации о созданных машинах, включая информацию о fqdn:
+
+<img width="991" height="458" alt="image" src="https://github.com/user-attachments/assets/2831137c-3fbf-404b-88b3-92376fae9501" />
+
+
+Запускаем сборку:
+
+<img width="766" height="985" alt="image" src="https://github.com/user-attachments/assets/0e44e88e-b28c-4796-be52-1618dedf06a1" />
+
+Получаем файл :
+
+<img width="978" height="348" alt="image" src="https://github.com/user-attachments/assets/637f108f-b1d0-4c7e-bf29-1d39c471334a" />
+
+
+
+
 
 
 
