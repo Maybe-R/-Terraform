@@ -67,12 +67,12 @@ variable "db_vms" {
 }
 
 variable "security_group_ids" {
-  description = "enpo86oipua6acenr4kt"
+  description = "Security group"
   type        = list(string)
 }
 
 variable "subnet_id" {
-  description = "e2lpcru79blhq6cajnd3"
+  description = "Subnet ID"
   type        = string
 }
 
