@@ -11,7 +11,7 @@ resource "yandex_compute_instance" "prod" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd827b91d99psvq5fjit"
+      image_id = data.yandex_compute_image.boot.id
       size     = each.value.disk_volume
     }
   }
